@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cats>
+
+    <cat>
+        <name>Марсик</name>
+        <gender>Мужской</gender>
+        <age>3 года</age>
+        <breed>Британская</breed>
+        <photos>
+            <photo>photo_cat1.jpg</photo>
+            <photo>photo_cat2.jpg</photo>
+            <photo>photo_cat3.jpg</photo>
+        </photos>
+    </cat>
+
+    <cat>
+        <name>Мурка</name>
+        <gender>Женский</gender>
+        <age>1 год 6 месяцев</age>
+        <breed>Мейн-кун</breed>
+        <photos>
+            <photo>photo_cat4.jpg</photo>
+            <photo>photo_cat5.jpg</photo>
+            <photo>photo_cat6.jpg</photo>
+        </photos>
+    </cat>
+
+    <cat>
+        <name>Кексик</name>
+        <gender>Мужской</gender>
+        <age>1 год 3 месяца</age>
+        <breed>Британский</breed>
+        <photos>
+            <photo>photo_cat7.jpg</photo>
+            <photo>photo_cat8.jpg</photo>
+            <photo>photo_cat9.jpg</photo>
+        </photos>
+    </cat>
+
+    <cat>
+        <name>Барсик</name>
+        <gender>Мужской</gender>
+        <age>1 год 7 месяцев</age>
+        <breed>Сибирский</breed>
+        <photos>
+            <photo>photo_cat10.jpg</photo>
+            <photo>photo_cat11.jpg</photo>
+            <photo>photo_cat12.jpg</photo>
+        </photos>
+    </cat>
+
+    <cat>
+        <name>Лёня</name>
+        <gender>Мужской</gender>
+        <age>2 месяца</age>
+        <breed>Сфинкс</breed>
+        <photos>
+            <photo>photo_cat13.jpg</photo>
+            <photo>photo_cat14.jpg</photo>
+            <photo>photo_cat15.jpg</photo>
+        </photos>
+    </cat>
+
+    <cat>
+        <name>Пончик</name>
+        <gender>Женский</gender>
+        <age>4 месяца</age>
+        <breed>Шотландец</breed>
+        <photos>
+            <photo>photo_cat16.jpg</photo>
+            <photo>photo_cat17.jpg</photo>
+            <photo>photo_cat18.jpg</photo>
+        </photos>
+    </cat>
+
+</cats>

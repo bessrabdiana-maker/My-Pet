@@ -1,0 +1,1091 @@
+body {
+    font-family: "ISOCPEUR";
+    font-size: 25px;
+    margin: 0;
+}
+
+.header-block {
+    position: relative;
+    margin: 0 auto;
+}
+
+.div1 {
+    background-color: #FFF8C4;
+    height: 40px;
+    margin-top: 65px;
+    color: #77374F;
+    font-family: "Gravitas One";
+    font-size: 40px;
+    text-align: center;
+}
+
+.div2 {
+    background-color: #FFF8C4;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.div3 {
+    background-color: #77374F;
+    height: 40px;
+    margin-top: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.right-img {
+    position: absolute;
+    right: 20px;
+    top: -20px;
+    height: 140px;
+    border: solid 2px #FFF4AA;
+    border-radius: 40%;
+}
+
+/*МЕНЮ КАТАЛОГА */
+nav {
+  background-color: #63453F;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #FFF4AA;
+  margin-left: 20px;
+}
+
+/* ВЫПАДАЮЩЕЕ МЕНЮ */
+
+.menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-title {
+  background-color: #63453F;
+  color: #FFF4AA;
+  cursor: pointer;
+}
+
+.nav1 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;           
+  flex-direction: column;
+  background-color: #63453F;
+  position: absolute;
+  width: 110px;
+ 
+}
+
+.menu-container:hover .nav1 {
+  display: flex;    
+  right: 1px;         
+}
+
+
+
+/*---------------------------------------------------*/
+
+      article {
+        width: 480px;
+        height: 570px;
+        background-color: #63453F;
+        border-radius: 10px;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column; /* Элементы будут друг под другом */
+        justify-content: center; /* Центровка по вертикали */
+        align-items: center;    /* Центровка по горизонтали */
+        gap: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        font-size: 20px;
+      }
+      article:hover {
+        transform: scale(1.03);
+         box-shadow: 0 12px 28px rgba(119, 55, 79, 0.55);
+      }
+
+      .myImage {
+        width:460px;
+        height: 300px;
+        border-radius: 8px;
+        object-fit: cover; 
+        cursor: pointer;
+      }
+
+      .rectangle2 {
+        width: 450px;
+        background-color: #FFF4AA;
+        border-radius: 10px;
+        padding: 5px;
+        height: 210px;
+        display: flex;           
+        justify-content: space-between; 
+        align-items: center;        
+        gap: 20px;
+     }
+
+      .btn-block {
+        display: flex;
+        flex-direction: column;    
+        gap: 10px;
+        margin-top: 90px;
+    }
+
+      .btn-block button {
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        background-color: #77374F;
+        color: #FFF4AA;
+    }
+      button:hover {
+        background-color: #63453F; 
+        transform: scale(1.05); 
+}
+      .body-block {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+
+/*footer*/
+    .footer {
+    margin-top: 15px;
+    background: #1A1C1F;
+    color: #FFF4AA;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-block h3 {
+    color: #FFF4AA;
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #77374F;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #FFF4AA;
+    transform: scale(1.05);
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 20px;
+    color: #63453F;
+}
+
+.to-top {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: #FFF4AA;
+    padding: 8px 55px;
+    border-radius: 5px;
+}
+
+.to-top:hover {
+    background: #63453F;
+    transform: scale(1.05);
+}
+
+/*-------------------------------------------------*/
+/*  Адаптация*/
+@media (max-width: 560px) {
+
+  /* Меню */
+  body {
+      font-size: 18px;
+  }
+
+  nav {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      display: flex;
+      gap: 10px;
+    }
+
+  .nav1 {
+    width: 80px;
+  }
+
+  .right-img {
+    margin: 10px auto;
+    height: 90px;
+    width: auto;
+  }
+
+   .div1{font-size: 30px;}
+   .div2, .div3, .div5 {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .divs1 {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  /* КАРТОЧКИ ЖИВОТНЫХ */
+
+  .body-block {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  article {
+    width: 80%;
+    height: auto;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .myImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .rectangle2 {
+    width: 90%;
+    height: 250px;
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .btn-block {
+    margin-top: 1px;
+    width: 100%;
+  }
+
+  .btn-block button {
+    width: 100%;
+    height: 35px;
+  }
+
+  ul {
+    margin-right: 150px;
+    width: 200px;
+  }
+
+   .footer {
+        padding: 20px 10px;
+    }
+
+    .footer-block h3 {
+        font-size: 22px;
+    }
+
+    .footer-block p,
+    .footer-links a {
+        font-size: 18px;
+    }
+
+    .footer-copy {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .to-top {
+        padding: 6px 12px;
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width: 561px) and (max-width: 1024px) {
+
+    body {
+    font-size: 20px;
+  }
+
+  /* ШАПКА */
+  .right-img {
+    height: 100px;
+    width: auto;
+    top: -10px;
+    right: 10px;
+  }
+
+  .div1 {
+    font-size: 35px;
+  }
+
+  .div2, .div3, .div5 {
+    font-size: 18px;
+  }
+
+  /* МЕНЮ */
+  nav {
+    height: auto;
+    padding: 10px 15px;
+    gap: 15px;
+  }
+
+  nav a {
+    font-size: 20px;
+  }
+
+  .nav1 {
+    width: 120px;
+    left: -17px;
+  }
+
+  .body-block {
+    display: flex;
+    flex-wrap: wrap;          /* разрешаем перенос */
+    justify-content: center;  /* центрируем */
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  article {
+    flex: 0 1 45%;            /* две карточки в ряд */
+    max-width: 45%;
+    height: auto;
+    padding: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+  }
+
+  .myImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .rectangle2 {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .btn-block button {
+    width: 100%;
+    height: 40px;
+  }
+
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .footer-block h3 {
+    font-size: 24px;
+  }
+
+  .footer-block p,
+  .footer-links a {
+    font-size: 18px;
+  }
+
+  .footer-copy {
+    font-size: 16px;
+  }
+
+  .to-top {
+    padding: 8px 20px;
+    font-size: 18px;
+  }
+}
+
+
+/*
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <title> кяр </title>
+  <link rel="stylesheet" href="myPet1_style.css">
+
+</head>
+<body>
+<header>
+    <nav>
+        <div class="menu-container">
+            <div class="menu-title">Каталог</div>
+            <ul class="nav1">
+                <li><a href="my Pet2.html">Котики</a></li>
+                <li><a href="my Pet1.html">Собачки</a></li>
+            </ul>
+        </div>
+
+        <a href="forma.html">Заявка</a>
+        <a href="#contacts">Контакты</a>
+        <a href="my Pet.html">Главная</a>
+    </nav>
+
+    <div class="header-block">
+        <div class = "div1"><h1><b>My Pet</b></h1></div>
+        <div class="div2"></div>
+        <img class="right-img" src="Copilot_20260315_100410.png" alt="Логотип">
+    </div>
+
+    <div class="div3">
+        <h2><b>Эти пёсики ищут дом</b></h2>
+    </div>
+</header>
+<!-------------------------------------------------------------------------->
+<main>
+
+<section class="body-block">
+    <article>
+      <img 
+    class="myImage"
+    src="c:/Users/Asus/КЯР курсач/photo_dog1.jpg"
+    data-photos="c:/Users/Asus/КЯР курсач/photo_dog1.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_dog2.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_dog3.jpg"
+    data-index="0"
+    onclick="changeImage(this)"
+  >
+     <div class="rectangle2">
+  <div>
+    <h2>Лакки</h2>
+    <ul>
+      <li><b>Пол:</b> Женский</li>
+      <li><b>Возраст:</b> 10 месяцев</li>
+      <li><b>Вид:</b> Собака</li>
+      <li><b>Порода:</b> Дворняга</li>
+    </ul>
+  </div>
+
+  <div class="btn-block">
+    <button onclick="showInfo('Лакки')">Подробнее...</button>
+    <button onclick="goToForm('Лакки','10  месяцев','Женский')">Оставить заявку</button>
+  </div>
+  </div>
+  </article>
+
+
+    <article>
+      <img 
+    class="myImage"
+    src="c:/Users/Asus/КЯР курсач/photo_dog4.jpg"
+    data-photos="c:/Users/Asus/КЯР курсач/photo_dog4.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_dog5.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_dog6.jpg"
+    data-index="0"
+    onclick="changeImage(this)"
+  >
+     <div class="rectangle2">
+  <div>
+    <h2>Гоша</h2>
+    <ul>
+      <li><b>Пол:</b> Мужской</li>
+      <li><b>Возраст:</b> 11 месяцев</li>
+      <li><b>Вид:</b> Собака</li>
+      <li><b>Порода:</b> Бульдог</li>
+    </ul>
+  </div>
+
+  <div class="btn-block">
+    <button onclick="showInfo('Гоша')">Подробнее...</button>
+    <button onclick="goToForm('Гоша','11  месяцев','Мужской')">Оставить заявку</button>
+  </div>
+  </div>
+  </article>
+
+
+    <article>
+          <img 
+    class="myImage"
+    src="c:/Users/Asus/КЯР курсач/photo_dog7.jpg"
+    data-photos="c:/Users/Asus/КЯР курсач/photo_dog7.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_dog8.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_dog9.jpg"
+    data-index="0"
+    onclick="changeImage(this)"
+  >
+     <div class="rectangle2">
+  <div>
+    <h2>Боня</h2>
+    <ul>
+      <li><b>Пол:</b> Мужской</li>
+      <li><b>Возраст:</b> 1 год 9 месяцев</li>
+      <li><b>Вид:</b> Собака</li>
+      <li><b>Порода:</b> Чихуахуа</li>
+    </ul>
+  </div>
+
+  <div class="btn-block">
+    <button onclick="showInfo('Боня')">Подробнее...</button>
+    <button onclick="goToForm('Боня','1 год 9 месяцев','Мужской')">Оставить заявку</button>
+  </div>
+  </div>
+  </article>
+
+  <article>
+           <img 
+    class="myImage"
+    src="c:/Users/Asus/КЯР курсач/photo_dog10.jpg"
+    data-photos="c:/Users/Asus/КЯР курсач/photo_dog10.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_dog11.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_dog12.jpg"
+    data-index="0"
+    onclick="changeImage(this)"
+  >
+     <div class="rectangle2">
+  <div>
+    <h2>Барни</h2>
+    <ul>
+      <li><b>Пол:</b> Мужской</li>
+      <li><b>Возраст:</b> 2 года</li>
+      <li><b>Вид:</b> Собака</li>
+      <li><b>Порода:</b> Шарпей</li>
+    </ul>
+  </div>
+
+  <div class="btn-block">
+    <button onclick="showInfo('Барни')">Подробнее...</button>
+    <button onclick="goToForm('Барни','2 года','Мужской')">Оставить заявку</button>
+  </div>
+  </div>
+  </article>
+
+    <article>
+      <img 
+    class="myImage"
+    src="c:/Users/Asus/КЯР курсач/photo_dog13.jpg"
+    data-photos="c:/Users/Asus/КЯР курсач/photo_dog13.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_dog14.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_dog15.jpg"
+    data-index="0"
+    onclick="changeImage(this)"
+  >
+     <div class="rectangle2">
+  <div>
+    <h2>Мими</h2>
+    <ul>
+      <li><b>Пол:</b> Женский</li>
+      <li><b>Возраст:</b> 2 месяца</li>
+      <li><b>Вид:</b> Собака</li>
+      <li><b>Порода:</b>Дворняга</li>
+    </ul>
+  </div>
+
+  <div class="btn-block">
+    <button onclick="showInfo('Мими')">Подробнее...</button>
+    <button onclick="goToForm('Мими','2 месяца','Женский')">Оставить заявку</button>
+  </div>
+  </div>
+  </article>
+
+
+    <article>
+      <img 
+    class="myImage"
+    src="c:/Users/Asus/КЯР курсач/photo_dog16.jpg"
+    data-photos="c:/Users/Asus/КЯР курсач/photo_dog16.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_dog17.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_dog18.jpg"
+    data-index="0"
+    onclick="changeImage(this)"
+  >
+     <div class="rectangle2">
+  <div>
+    <h2>Мося</h2>
+    <ul>
+      <li><b>Пол:</b> Женский</li>
+      <li><b>Возраст:</b> 1 год 11 месяцев</li>
+      <li><b>Вид:</b> Собака</li>
+      <li><b>Порода:</b> Мопс</li>
+    </ul>
+  </div>
+
+  <div class="btn-block">
+    <button onclick="showInfo('Мося')">Подробнее...</button>
+    <button onclick="goToForm('Мося','1год 11 месяцев','Женский')">Оставить заявку</button>
+  </div>
+  </div>
+  </article>
+
+</section>
+</main>
+
+<footer id="contacts" class = "div3">
+    <h2>Свяжитесь с нами! (+375333316066)</h2>
+</footer>
+
+
+<script>
+    function changeImage(img) {
+  let photos = img.dataset.photos.split(",");
+  let index = parseInt(img.dataset.index);
+
+  index = (index + 1) % photos.length;
+
+  img.src = photos[index].trim();
+  img.dataset.index = index;
+}
+
+
+function showInfo(name) {
+  const info = {
+  "Лакки": `Имя: Лакки
+Пол: Женский
+Возраст: 10 месяцев
+Вид: Собака
+Порода: Дворняга
+ О характере:
+Лакки — это смесь нежности и осторожности. Она любит играть, бегать за мячиком и приносить палочки, но при этом всегда внимательно наблюдает за человеком, прежде чем подойти. Она умная, быстро учится командам и очень старается угодить тому, кому доверяет.
+ Особенности породы:
+Как дворняга, Лакки обладает крепким здоровьем, выносливостью и удивительной сообразительностью. Она легко адаптируется к новым условиям, понимает настроение человека и умеет находить выход из любой ситуации.
+ Тяжёлое прошлое:
+Лакки выросла на улице. Она рано узнала, что такое холод, голод и опасность. Из-за этого она может вздрагивать от резких движений или громких звуков, но рядом с добрым человеком быстро успокаивается.
+ История спасения:
+Волонтёры нашли её возле оживлённой трассы — она бегала между машинами, пытаясь найти маму. Девочку удалось поймать только после часа попыток: она была напугана, но очень хотела помощи. Сейчас Лакки полностью восстановилась и ищет дом, где её будут любить.
+`,
+
+  "Гоша": `Имя: Гоша
+Пол: Мужской
+Возраст: 11 месяцев
+Вид: Собака
+Порода: Бульдог
+ О характере:
+Гоша — спокойный, уверенный и невероятно добрый парень. Он любит внимание, обожает, когда его чешут за ушком, и всегда старается быть рядом с человеком. Он не конфликтный, дружелюбный и отлично ладит с детьми.
+ Особенности породы:
+Бульдоги — это собаки с большим сердцем. Гоша обладает крепким телосложением, мягким характером и удивительной преданностью. Он быстро привыкает к режиму, любит прогулки и с удовольствием учится новым командам.
+ Тяжёлое прошлое:
+Гоша жил в семье, но после развода хозяева не смогли договориться, кому он достанется. Его временно оставили у знакомых, а потом просто перестали забирать. Некоторое время он жил в тесном сарае.
+ История спасения:
+Соседи сообщили волонтёрам, что собака живёт одна. Гошу забрали, обследовали и привезли в приют. Сейчас он полностью здоров, социализирован и готов стать частью новой семьи.
+`,
+
+"Боня": `Имя: Боня
+Пол: Мужской
+Возраст: 1 год 9 месяцев
+Вид: Собака
+Порода: Чихуахуа
+ О характере:
+Боня — маленький, но очень смелый. Он любит быть в центре внимания, обожает сидеть на руках и всегда готов защищать своего человека, даже если противник в десять раз больше. Он активный, игривый и невероятно преданный.
+ Особенности породы:
+Чихуахуа — это собаки-компаньоны. Боня обладает живым умом, быстрыми реакциями и огромным сердцем. Он отлично подходит для квартиры и любит, когда ему уделяют внимание.
+ Тяжёлое прошлое:
+Боню купили как игрушку, но когда он вырос и стал требовать внимания, его начали запирать в ванной, чтобы «не мешал». Из-за этого он может бояться закрытых дверей.
+ История спасения:
+Соседи услышали лай и сообщили волонтёрам. Боню забрали, вылечили и окружили заботой. Сейчас он снова доверяет людям и ищет хозяина, который будет относиться к нему как к члену семьи.
+`,
+
+"Барни": `Имя: Барни
+Пол: Мужской
+Возраст: 2 года
+Вид: Собака
+Порода: Шарпей
+ О характере:
+Барни — спокойный, рассудительный и очень умный. Он любит долгие прогулки, вкусные лакомства и тихие вечера рядом с человеком. Он не навязчивый, но всегда рядом, когда нужен.
+ Особенности породы:
+Шарпеи — это собаки с сильным характером и глубоким умом. Барни обладает прекрасной памятью, быстро учится и отлично понимает команды. Он преданный и надёжный друг.
+ Тяжёлое прошлое:
+Барни жил у заводчика, который держал слишком много собак и не справлялся с уходом. Барни неделями сидел в тесном вольере и почти не видел людей.
+ История спасения:
+Волонтёры забрали всех собак из того хозяйства. Барни оказался самым спокойным и терпеливым. Сейчас он полностью восстановился и ждёт хозяина, который даст ему любовь и свободу.
+`,
+
+  "Мими": `Имя: Мими
+Пол: Женский
+Возраст: 2 месяца
+Вид: Собака
+Порода: Дворняга
+ О характере:
+Мими — маленький комочек энергии. Она любит играть, бегать, исследовать всё вокруг и знакомиться с людьми. Она очень ласковая, быстро привязывается и обожает сидеть на руках.
+ Особенности породы:
+Как дворняжка, Мими обладает крепким здоровьем, быстрым умом и удивительной адаптивностью. Она легко обучается и подходит как для квартиры, так и для частного дома.
+ Тяжёлое прошлое:
+Мими нашли в коробке возле подъезда. Она была холодная, голодная и тихо пищала, пытаясь привлечь внимание.
+ История спасения:
+Прохожая услышала писк и вызвала волонтёров. Малышку забрали, выкормили и выходили. Сейчас Мими здорова, активна и готова стать любимицей семьи.
+`,
+
+"Мося": `Имя: Мося
+Пол: Женский
+Возраст: 1 год 11 месяцев
+Вид: Собака
+Порода: Мопс
+ О характере:
+Мося — весёлая, смешная и невероятно добрая девочка. Она любит играть, смешно хрюкает, когда радуется, и всегда старается быть рядом с человеком. Она отлично ладит с детьми и другими животными.
+ Особенности породы:
+Мопсы — это собаки-комики. Мося обладает круглой мордочкой, выразительными глазами и мягким характером. Она любит внимание, быстро учится и обожает вкусняшки.
+ Тяжёлое прошлое:
+Мосю держали в маленькой клетке, потому что «так удобнее». Она почти не гуляла и мало общалась с людьми.
+ История спасения:
+Волонтёры забрали её после жалобы соседей. Мося быстро восстановилась, стала активной и жизнерадостной. Сейчас она ищет дом, где её будут любить и баловать.
+`
+};
+
+  alert(info[name]);
+}
+
+
+function goToForm(name, age, gender) {
+  const url = `forma.html?name=${encodeURIComponent(name)}&age=${encodeURIComponent(age)}&gender=${encodeURIComponent(gender)}`;
+  window.location.href = url;
+}
+
+</script>
+
+</body>
+</html>
+
+*/
+
+
+
+/*
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <title> кяр </title>
+  <link rel="stylesheet" href="myPet1_style.css">
+
+</head>
+<body>
+  
+<header>
+    <nav>
+        <div class="menu-container">
+            <div class="menu-title">Каталог</div>
+            <ul class="nav1">
+                <li><a href="my Pet2.html">Котики</a></li>
+                <li><a href="my Pet1.html">Собачки</a></li>
+            </ul>
+        </div>
+
+        <a href="forma.html">Заявка</a>
+        <a href="my Pet.html#contacts">Контакты</a>
+        <a href="my Pet.html">Главная</a>
+    </nav>
+
+    <div class="header-block">
+        <div class = "div1"><h1><b>My Pet</b></h1></div>
+        <div class="div2"></div>
+        <img class="right-img" src="Copilot_20260315_100410.png" alt="Логотип">
+    </div>
+
+    <div class="div3">
+        <h2><b>Эти котики ищут дом</b></h2>
+    </div>
+</header>
+<!-------------------------------------------------------------------------->
+<main>
+
+<section class="body-block">
+  <article>
+    <img 
+    class="myImage"
+    src="c:/Users/Asus/КЯР курсач/photo_cat1.jpg"
+    data-photos="c:/Users/Asus/КЯР курсач/photo_cat1.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_cat2.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_cat3.jpg"
+    data-index="0"
+    onclick="changeImage(this)"
+  >
+  
+     <div class="rectangle2">
+  <div>
+    <h2>Марсик</h2>
+    <ul>
+      <li><b>Пол:</b> Мужской</li>
+      <li><b>Возраст:</b> 3 года</li>
+      <li><b>Вид:</b> Кот</li>
+      <li><b>Порода:</b> Британская</li>
+    </ul>
+  </div>
+
+  <div class="btn-block">
+    <button onclick="showInfo('Марсик')">Подробнее...</button>
+    <button onclick="goToForm('Марсик','3 года','Мужской')">Оставить заявку</button>
+  </div>
+  </div>
+  </article>
+
+    <article>
+      <img 
+    class="myImage"
+    src="c:/Users/Asus/КЯР курсач/photo_cat4.jpg"
+    data-photos="c:/Users/Asus/КЯР курсач/photo_cat4.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_cat5.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_cat6.jpg"
+    data-index="0"
+    onclick="changeImage(this)"
+  >
+  <div class="rectangle2">
+  <div>
+    <h2>Мурка</h2>
+    <ul>
+      <li><b>Пол:</b> Женский</li>
+      <li><b>Возраст:</b> 1 год 6 месяцев</li>
+      <li><b>Вид:</b> Кот</li>
+      <li><b>Порода:</b> Мейн-кун</li>
+    </ul>
+  </div>
+
+  <div class="btn-block">
+    <button onclick="showInfo('Мурка')">Подробнее...</button>
+    <button onclick="goToForm('Мурка','1 год 6 месяцев','Женский')">Оставить заявку</button>
+  </div>
+  </div>
+  </article>
+
+
+    <article>
+          <img 
+    class="myImage"
+    src="c:/Users/Asus/КЯР курсач/photo_cat7.jpg"
+    data-photos="c:/Users/Asus/КЯР курсач/photo_cat7.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_cat8.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_cat9.jpg"
+    data-index="0"
+    onclick="changeImage(this)"
+  >
+     <div class="rectangle2">
+  <div>
+    <h2>Кексик</h2>
+    <ul>
+      <li><b>Пол:</b> Мужской</li>
+      <li><b>Возраст:</b> 1 год 3 месяца</li>
+      <li><b>Вид:</b> Кот</li>
+      <li><b>Порода:</b> Британский</li>
+    </ul>
+  </div>
+
+  <div class="btn-block">
+    <button onclick="showInfo('Кексик')">Подробнее...</button>
+    <button onclick="goToForm('Кексик','1 год 3 месяца','Мужской')">Оставить заявку</button>
+  </div>
+  </div>
+  </article>
+
+  <article>
+           <img 
+    class="myImage"
+    src="c:/Users/Asus/КЯР курсач/photo_cat10.jpg"
+    data-photos="c:/Users/Asus/КЯР курсач/photo_cat10.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_cat11.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_cat12.jpg"
+    data-index="0"
+    onclick="changeImage(this)"
+  >
+     <div class="rectangle2">
+  <div>
+    <h2>Барсик</h2>
+    <ul>
+      <li><b>Пол:</b> Мужской</li>
+      <li><b>Возраст:</b> 1 год 7 месяцев</li>
+      <li><b>Вид:</b> Кот</li>
+      <li><b>Порода:</b> Сибирский</li>
+    </ul>
+  </div>
+
+  <div class="btn-block">
+    <button onclick="showInfo('Барсик')">Подробнее...</button>
+    <button onclick="goToForm('Барсик','1 год 7 месяцев','Мужской')">Оставить заявку</button>
+  </div>
+  </div>
+  </article>
+
+    <article>
+      <img 
+    class="myImage"
+    src="c:/Users/Asus/КЯР курсач/photo_cat13.jpg"
+    data-photos="c:/Users/Asus/КЯР курсач/photo_cat13.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_cat14.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_cat15.jpg"
+    data-index="0"
+    onclick="changeImage(this)"
+  >
+     <div class="rectangle2">
+  <div>
+    <h2>Лёня</h2>
+    <ul>
+      <li><b>Пол:</b> Мужской</li>
+      <li><b>Возраст:</b> 2 месяца</li>
+      <li><b>Вид:</b> Кот</li>
+      <li><b>Порода:</b> Сфинкс</li>
+    </ul>
+  </div>
+
+  <div class="btn-block">
+    <button onclick="showInfo('Лёня')">Подробнее...</button>
+    <button onclick="goToForm('Лёня','2 месяца','Мужской')">Оставить заявку</button>
+  </div>
+  </div>
+  </article>
+
+
+    <article>
+      <img 
+    class="myImage"
+    src="c:/Users/Asus/КЯР курсач/photo_cat16.jpg"
+    data-photos="c:/Users/Asus/КЯР курсач/photo_cat16.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_cat17.jpg,
+                 c:/Users/Asus/КЯР курсач/photo_cat18.jpg"
+    data-index="0"
+    onclick="changeImage(this)"
+  >
+     <div class="rectangle2">
+  <div>
+    <h2>Пончик</h2>
+    <ul>
+      <li><b>Пол:</b> Женский</li>
+      <li><b>Возраст:</b> 4 месяца</li>
+      <li><b>Вид:</b> Кот</li>
+      <li><b>Порода:</b> Шотландец</li>
+    </ul>
+  </div>
+
+  <div class="btn-block">
+    <button onclick="showInfo('Пончик')">Подробнее...</button>
+    <button onclick="goToForm('Пончик','4 месяца','Женский')">Оставить заявку</button>
+  </div>
+  </div>
+  </article>
+
+</main>
+
+<footer id="contacts" class = "div3">
+    <h2>Свяжитесь с нами! (+375333316066)</h2>
+</footer>
+
+<script>
+    function changeImage(img) {
+  let photos = img.dataset.photos.split(",");
+  let index = parseInt(img.dataset.index);
+
+  index = (index + 1) % photos.length;
+
+  img.src = photos[index].trim();
+  img.dataset.index = index;
+}
+
+
+function showInfo(name) {
+  const info = {
+  "Мурка": `Имя: Мурка
+Пол: Женский
+Возраст: 11 месяцев
+Вид: Кот
+Порода: Мейн-кун
+ О характере: любопытный котенок, готовый часами охотиться за «солнечным зайчиком», и осторожный наблюдатель. Она никогда не бросится к незнакомцу сразу — сначала Мурка замирает в стороне, внимательно «сканируя» человека своим пронзительным взглядом. Но как только лед тает, она превращается в преданную спутницу, которая понимает каждое слово.
+Особенности породы: В Мурке видна истинная порода: кисточки на ушах, мощные лапы и роскошный хвост мейн-куна. Несмотря на юный возраст, она обладает природной выносливостью и умом, который позволяет ей открывать двери и находить спрятанные лакомства быстрее любых сородичей.
+ Тяжелое прошлое: Детство Мурки не было наполнено мягкими подушками. Она рано узнала, что такое холод и каково это — добывать еду в одиночку. Мурка может испуганно прижать уши при резком взмахе руки или виде длинных предметов. 
+ История спасения: Её спасение — волонтёры заметили её в окне заброшенного здания, охваченного едким дымом. Её вынесли на руках буквально за минуту до того, как огонь отрезал путь к выходу. 
+`,
+
+  "Марсик": `Имя: Марсик
+Пол: Мужской
+Возраст: 3 года
+Вид: Кот
+Порода: Британская
+ О характере:
+Марсик — настоящий джентльмен среди котов. Спокойный, уверенный в себе и невероятно ласковый. Он любит, когда его гладят по щёчкам, и отвечает тихим, бархатным мурчанием. Марсик не из тех, кто будет носиться по дому — он предпочитает наблюдать за жизнью с высоты дивана или подоконника.
+ Особенности породы:
+Британцы — это «плюшевые медведи» кошачьего мира. Марсик обладает густой шерстью, мощными лапами и круглыми глазами, которые смотрят прямо в душу. Он умён, уравновешен и прекрасно понимает настроение человека.
+ Тяжёлое прошлое:
+Марсик жил в семье, где его любили, но после переезда за границу хозяева не смогли взять его с собой. Некоторое время он жил один в пустой квартире, куда приходили лишь кормить. Из-за этого он может грустить, если долго остаётся без внимания.
+ История спасения:
+Соседи сообщили волонтёрам, что кот живёт один. Марсика забрали, обследовали и привезли в приют. Сейчас он полностью адаптировался и ждёт новую семью, которой подарит спокойствие и уют.`
+,
+"Кексик": `Имя: Кексик
+Пол: Мужской
+Возраст: 1 год 3 месяца
+Вид: Кот
+Порода: Британский
+ О характере:
+Кексик — это сочетание мягкости и озорства. Он любит играть, особенно с верёвочками и мячиками, но при этом остаётся очень нежным и деликатным. Он из тех котов, которые приходят спать рядом, аккуратно укладываясь у ног.
+ Особенности породы:
+У Кексика плотная плюшевая шерсть и классическая британская мордочка. Он умён, быстро запоминает правила дома и никогда не делает лишнего. Британцы славятся спокойствием — и Кексик полностью подтверждает это.
+ Тяжёлое прошлое:
+Кексика нашли возле подъезда — он сидел на коврике и ждал, когда дверь снова откроется. Его просто выбросили. Первое время он боялся громких шагов и закрывающихся дверей.
+ История спасения:
+Соседи позвонили волонтёрам, и Кексика забрали в приют. Он быстро восстановился, снова стал доверять людям и теперь ищет дом, где его никогда больше не предадут.`,
+
+"Барсик": `Имя: Барсик
+Пол: Мужской
+Возраст: 1 год 7 месяцев
+Вид: Кот
+Порода: Сибирский
+ О характере:
+Барсик — настоящий маленький тигр: смелый, уверенный и очень ласковый. Он любит активные игры, но также обожает сидеть рядом с человеком, подставляя пушистый бок под руку. Барсик быстро привязывается и становится верным другом.
+ Особенности породы:
+Сибиряки — это крепкие, умные и невероятно красивые коты. Барсик обладает густой шерстью, мощными лапами и природной грацией. Он отлично ладит с детьми и другими животными.
+ Тяжёлое прошлое:
+Барсик родился в частном доме, но когда хозяева переехали, кота просто оставили во дворе. Он долго жил на улице, пережил холода и голод. Из-за этого он может настороженно относиться к незнакомым людям.
+ История спасения:
+Соседи заметили, что кот сильно похудел, и вызвали волонтёров. Барсика забрали, вылечили и откормили. Сейчас он здоров, красив и готов стать домашним любимцем.`,
+
+  "Лёня": `Имя: Лёня
+Пол: Мужской
+Возраст: 2 месяца
+Вид: Кот
+Порода: Сфинкс
+ О характере:
+Лёня — маленький, тёплый и невероятно ласковый котёнок. Он любит сидеть на руках, прятаться под одеяло и мурлыкать так громко, что слышно на всю комнату. Очень доверчивый и нежный.
+ Особенности породы:
+Сфинксы — это коты-компаньоны, которые обожают людей. Лёня — не исключение: он всегда ищет тепло и внимание. У него мягкая бархатная кожа, большие ушки и огромные глаза, которые невозможно забыть.
+ Тяжёлое прошлое:
+Лёню нашли в коробке возле магазина. Он был замёрзший и слабый, но всё равно тянулся к людям. Из-за пережитого холода он любит тепло и может бояться сквозняков.
+ История спасения:
+Прохожая заметила коробку и услышала тихое мяуканье. Лёню передали волонтёрам, которые выходили его. Сейчас он полностью здоров и ищет дом, где его будут любить и согревать.`,
+
+"Пончик": `Имя: Пончик
+Пол: Женский
+Возраст: 4 месяца
+Вид: Кот
+Порода: Вислоухий шотландец
+ О характере:
+Пончик — мягкая, нежная и очень игривая малышка. Она любит бегать за игрушками, смешно подпрыгивать и мурлыкать, когда её берут на руки. Очень дружелюбная и быстро привыкает к людям.
+ Особенности породы:
+Шотландские вислоухие — это коты с мягким характером и невероятной внешностью. У Пончика круглые глаза, плюшевая шерсть и очаровательные висячие ушки. Она умная, спокойная и отлично подходит для семьи.
+ Тяжёлое прошлое:
+Пончика нашли возле рынка — она бегала между лотками в поисках еды. Была голодная и испуганная. Из-за этого она может немного настороженно относиться к резким звукам.
+ История спасения:
+Продавцы позвали волонтёров, и малышку забрали в приют. Сейчас она здорова, активна и готова стать любимицей семьи.`
+};
+
+  alert(info[name]);
+}
+
+
+function goToForm(name, age, gender) {
+  const url = `forma.html?name=${encodeURIComponent(name)}&age=${encodeURIComponent(age)}&gender=${encodeURIComponent(gender)}`;
+  window.location.href = url;
+}
+
+</script>
+
+
+
+</body>
+</html>
+
+*/

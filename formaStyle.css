@@ -1,0 +1,94 @@
+@media (max-width: 560px) {
+
+  body {
+    font-size: 18px;
+  }
+
+  nav {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+
+    .nav1 {
+      width: 80px;
+    }
+  }
+
+  .right-img {
+    margin: 10px auto;
+    height: 90px;
+    width: auto;
+  }
+
+  /*---------------------------------*/
+
+  .div1 {
+    font-size: 30px;
+  }
+
+  .div2,
+  .div3,
+  .div5 {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .divs1 {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  form {
+    width: 95%;
+
+    fieldset {
+      width: 90%;
+      grid-template-columns: 1fr;
+      row-gap: 10px;
+      padding: 15px;
+    }
+
+    input:not([type="radio"]),
+    select {
+      width: 100% !important;
+      height: 45px;
+      font-size: 18px;
+    }
+
+    button[type="submit"],
+    button[type="reset"] {
+      width: 90%;
+      margin-left: 5%;
+    }
+  }
+
+  .footer {
+    padding: 20px 10px;
+
+    .footer-block {
+
+      h3 {
+        font-size: 22px;
+      }
+
+      p,
+      .footer-links a {
+        font-size: 18px;
+      }
+    }
+
+    .footer-copy {
+      font-size: 16px;
+      margin-top: 15px;
+    }
+
+    .to-top {
+      padding: 6px 12px;
+      font-size: 16px;
+    }
+  }
+
+}

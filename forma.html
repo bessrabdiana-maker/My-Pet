@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>forma</title>
+  <link rel="stylesheet" href="forma_style.css">
+  <link rel="stylesheet" href="formaStyle.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="menu-container">
+            <div class="menu-title">Каталог</div>
+            <ul class="nav1">
+                <li><a href="my Pet2.html">Котики</a></li>
+                <li><a href="my Pet1.html">Собачки</a></li>
+            </ul>
+        </div>
+
+        <a href="forma.html">Заявка</a>
+        <a href="my Pet.html#contacts">Контакты</a>
+        <a href="my Pet.html">Главная</a>
+    </nav>
+
+    <div class="header-block">
+        <div class = "div1"><h1><b>My Pet</b></h1></div>
+        <div class="div2"></div>
+        <img class="right-img" src="logo.jpeg" alt="Логотип">
+    </div>
+
+    <div class="div3">
+        <h2><b>Заявка</b></h2>
+    </div>
+</header>
+<!-------------------------------------------------------------------------->
+<main>
+
+<section class="form-section">
+
+<form>
+
+    <fieldset>
+        <legend><h2>Личные данные</h2></legend>
+
+        <label for="lastname">Фамилия:</label>
+        <input type="text" id="lastname" name="lastname">
+
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="patronymic">Отчество:</label>
+        <input type="text" id="patronymic" name="patronymic">
+
+        <label for="age">Дата рождения:</label>
+        <input type="date" id="age" name="age">
+     
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" placeholder = "+375 (XX) XXX-XX-XX ">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        
+        <label>Откуда вы узнали о нас?</label>
+        <select>
+            <option value="instagram">Instagram</option>
+            <option value="telegram">Telegram</option>
+            <option value="friend">От знакомых</option>
+            <option value="vk">ВК</option>
+        </select>
+
+        <fieldset class="radio-group">
+            <legend>Пол:</legend>
+
+            <input type="radio" id="man" name="genderHuman">
+            <label for="man">Мужской</label>
+
+            <input type="radio" id="women" name="genderHuman">
+            <label for="women">Женский</label>
+        </fieldset>
+
+        
+    </fieldset>
+
+    <fieldset>
+        <legend><h2>Данные животного</h2></legend>
+
+        <label for="namePet">Имя животного:</label>
+        <input type="text" id="namePet" name="namePet">
+
+        <label for="agePet">Возраст животного:</label>
+        <input type="text" id="agePet" name="agePet">
+
+        <fieldset class="radio-group">
+            <legend>Пол животного:</legend>
+
+            <input type="radio" id="manPet" name="genderPet">
+            <label for="manPet">Мужской</label>
+
+            <input type="radio" id="womenPet" name="genderPet">
+            <label for="womenPet">Женский</label>
+        </fieldset>
+        
+    </fieldset>
+
+    <button type="submit">Отправить заявку</button>
+    <button type="reset">Сбросить заявку</button>
+
+</form>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+        <div class="footer-block">
+            <h3 id="contacts">Контакты</h3>
+            <p>Адрес: д. Тюрли, ул. Восточная, д. 1</p>
+            <p>Телефон: +375 33 331 60 66</a></p>
+            <p>Email: mypet@gmail.com</p>
+             <p>Время работы:<br> Пн-Пт: 8:00-20:00, Сб-Вт: 9:00-12:00</p>
+        </div>
+
+        <div class="footer-block">
+            <h3>Навигация</h3>
+            <ul class="footer-links">
+                <li><a href="my Pet.html">Главная</a></li>
+                <li><a href="my Pet2.html">Котики</a></li>
+                <li><a href="my Pet1.html">Собачки</a></li>
+                <li><a href="forma.html">Оставить заявку</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-block">
+            <h3>Мы в соцсетях</h3>
+            <p>Instagram: <a href="https://instagram.com/MY_PET">MY_PET</a></p>
+            <p>Telegram: <a href="https://t.me/MY_PET">@MY_PET</a></p>
+            <p>VK: <a href="#">Сообщество My Pet</a></p>
+        </div>
+
+    </div>
+
+    <div class="footer-copy">
+        © 2026 My Pet. Все права защищены.
+    </div>
+
+    <a href="#" class="to-top">Наверх</a>
+
+</footer>
+
+<script>
+function getParam(name) {
+  return new URLSearchParams(window.location.search).get(name);
+}
+
+window.onload = function() {
+  const petName = getParam("name");
+  const petAge = getParam("age");
+  const petGender = getParam("gender");
+
+  if (petName) document.querySelector('input[name="namePet"]').value = petName;
+  if (petAge) document.querySelector('input[name="agePet"]').value = petAge;
+
+  if (petGender === "Мужской") {
+    document.getElementById("manPet").checked = true;
+  } else if (petGender === "Женский") {
+    document.getElementById("womenPet").checked = true;
+  }
+};
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dogs>
+
+    <dog>
+        <name>Лакки</name>
+        <gender>Женский</gender>
+        <age>10 месяцев</age>
+        <breed>Дворняга</breed>
+        <photos>
+            <photo>photo_dog1.jpg</photo>
+            <photo>photo_dog2.jpg</photo>
+            <photo>photo_dog3.jpg</photo>
+        </photos>
+    </dog>
+
+    <dog>
+        <name>Гоша</name>
+        <gender>Мужской</gender>
+        <age>11 месяцев</age>
+        <breed>Бульдог</breed>
+        <photos>
+            <photo>photo_dog4.jpg</photo>
+            <photo>photo_dog5.jpg</photo>
+            <photo>photo_dog6.jpg</photo>
+        </photos>
+    </dog>
+
+    <dog>
+        <name>Боня</name>
+        <gender>Мужской</gender>
+        <age>1 год 9 месяцев</age>
+        <breed>Чихуахуа</breed>
+        <photos>
+            <photo>photo_dog7.jpg</photo>
+            <photo>photo_dog8.jpg</photo>
+            <photo>photo_dog9.jpg</photo>
+        </photos>
+    </dog>
+
+    <dog>
+        <name>Барни</name>
+        <gender>Мужской</gender>
+        <age>2 года</age>
+        <breed>Шарпей</breed>
+        <photos>
+            <photo>photo_dog10.jpg</photo>
+            <photo>photo_dog11.jpg</photo>
+            <photo>photo_dog12.jpg</photo>
+        </photos>
+    </dog>
+
+    <dog>
+        <name>Мими</name>
+        <gender>Женский</gender>
+        <age>2 месяца</age>
+        <breed>Дворняга</breed>
+        <photos>
+            <photo>photo_dog13.jpg</photo>
+            <photo>photo_dog14.jpg</photo>
+            <photo>photo_dog15.jpg</photo>
+        </photos>
+    </dog>
+
+    <dog>
+        <name>Мося</name>
+        <gender>Женский</gender>
+        <age>1 год 11 месяцев</age>
+        <breed>Мопс</breed>
+        <photos>
+            <photo>photo_dog16.jpg</photo>
+            <photo>photo_dog17.jpg</photo>
+            <photo>photo_dog18.jpg</photo>
+        </photos>
+    </dog>
+
+</dogs>
